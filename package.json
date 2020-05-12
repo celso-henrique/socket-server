@@ -4,6 +4,7 @@
   "description": "Socket server for DIO lesson",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/celso-henrique/socket-server/issues"
   },
-  "homepage": "https://github.com/celso-henrique/socket-server#readme"
+  "homepage": "https://github.com/celso-henrique/socket-server#readme",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  }
 }
