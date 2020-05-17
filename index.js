@@ -36,6 +36,7 @@ io.on('connection', socket => {
     console.info(`User logout: ${user.username}`);
 
     users = users.filter(listUser => listUser.username !== user.username);
+    activeUser = {};
 
     io.emit('logout', user);
     io.emit('users update', users);
