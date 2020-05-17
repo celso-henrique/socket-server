@@ -1,5 +1,5 @@
-# socket-server
-Socket server for DIO lesson
+# Socket.io Server
+Socket.io server for DIO lesson.
 
 # Install
 Clone this repository and install it dependencies with this command:
@@ -18,3 +18,7 @@ $ npm start
 With Docker installed just run the command bellow:
 ```sh
 $ docker run -p 8080:8080 celsohsilva/socket-server
+```
+
+# License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
