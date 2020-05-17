@@ -1,12 +1,21 @@
+const app = require('http').createServer(handler);
+const io = require('socket.io')(app);
+
 const PORT = 8080;
-const io = require('socket.io')(PORT);
+
+app.listen(PORT);
+
+function handler(req, res) {
+  res.writeHead(200);
+  res.end('Socket.io running!');
+}
 
 io.on('connection', socket => {
   socket.on('message', msg => {
-    console.info(msg);
+    console.info(`New message: ${msg}`);
 
     io.emit('message', msg);
   });
 });
 
-console.info(`Starting socket.io server in port ${PORT}`);
+console.info(`Socket.io started in port ${PORT}`);
