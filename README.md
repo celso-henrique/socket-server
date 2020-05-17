@@ -1,5 +1,5 @@
-# socket-server
-Socket server for DIO lesson
+# Socket.io Server
+Socket.io server for DIO lesson.
 
 # Install
 Clone this repository and install it dependencies with this command:
