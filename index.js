@@ -12,7 +12,7 @@ function handler(req, res) {
 }
 
 io.on('connection', socket => {
-  let activeUser;
+  let activeUser = {};
 
   socket.emit('users update', users);
 
@@ -44,7 +44,7 @@ io.on('connection', socket => {
   socket.on('disconnect', () => {
     console.info(`User disconnected: ${activeUser.username}`);
 
-    if (activeUser) {
+    if (activeUser.username) {
       users = users.filter(
         listUser => listUser.username !== activeUser.username
       );
