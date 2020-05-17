@@ -18,3 +18,7 @@ $ npm start
 With Docker installed just run the command bellow:
 ```sh
 $ docker run -p 8080:8080 celsohsilva/socket-server
+```
+
+# License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
