@@ -2,7 +2,6 @@
   "name": "socket-server",
   "version": "1.0.0",
   "description": "Socket server for DIO lesson",
-  "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +18,7 @@
     "Server"
   ],
   "author": "“Celso <“celso.henrique@hotmail.com.br”>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/celso-henrique/socket-server/issues"
   },
